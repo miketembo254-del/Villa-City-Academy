@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Villa City Academy | Eldoret, Kenya</title>
+<meta name="description" content="Villa City Academy is a community youth football programme in Eldoret, Kenya. Join our teams, view fixtures and register.">
+<style>
+:root {
+  --navy: #102747;
+  --blue: #1768d1;
+  --green: #35b86b;
+  --light: #f3f7fc;
+  --white: #ffffff;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--navy);
+  line-height: 1.6;
+}
+header {
+  background: var(--navy);
+  color: white;
+  padding: 15px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand img {
+  width: 58px; height: 58px; object-fit: contain;
+  background: white; border-radius: 8px;
+}
+.brand strong { display: block; font-size: 18px; }
+.brand small { color: #c8d8ee; }
+nav { display: flex; gap: 17px; flex-wrap: wrap; }
+nav a { color: white; text-decoration: none; font-size: 14px; }
+nav a:hover { color: #8ee4a8; }
+.hero {
+  background: linear-gradient(120deg, #102747, #1768d1);
+  color: white; text-align: center;
+  padding: 85px 20px;
+}
+.hero h1 { font-size: clamp(34px, 6vw, 58px); margin: 0 0 15px; }
+.hero p { max-width: 650px; margin: 0 auto 25px; font-size: 18px; }
+.btn {
+  display: inline-block; padding: 12px 21px;
+  border-radius: 7px; text-decoration: none;
+  font-weight: bold; border: 0; cursor: pointer;
+  margin: 5px; font-size: 15px;
+}
+.btn-green { background: var(--green); color: white; }
+.btn-white { background: white; color: var(--navy); }
+section { padding: 60px 7%; }
+.section-title { text-align: center; margin-bottom: 30px; }
+.section-title h2 { font-size: 30px; margin-bottom: 5px; }
+.section-title p { color: #64748b; }
+.intro { max-width: 800px; margin: auto; text-align: center; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 18px;
+}
+.card {
+  background: white; border-radius: 12px; padding: 24px;
+  box-shadow: 0 4px 18px #10274712;
+  border: 1px solid #e3eaf3;
+}
+.card h3 { margin-top: 0; }
+.soft { background: var(--light); }
+.number { font-size: 28px; }
+.notice {
+  background: #e7f8ee; border-left: 4px solid var(--green);
+  padding: 15px; border-radius: 5px;
+}
+form { max-width: 650px; margin: auto; }
+label { display: block; font-weight: bold; margin-top: 14px; }
+input, select, textarea {
+  width: 100%; padding: 12px; margin-top: 5px;
+  border: 1px solid #cbd5e1; border-radius: 6px;
+  font: inherit; background: white;
+}
+footer { background: var(--navy); color: white; padding: 30px 7%; text-align: center; }
+footer a { color: #8ee4a8; }
+.muted { color: #64748b; font-size: 14px; }
+@media (max-width: 600px) {
+  header { justify-content: center; }
+  nav { justify-content: center; }
+  section { padding: 45px 5%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <img src="logo.png" alt="Villa City Academy logo"
+         onerror="this.style.display='none'">
+    <div>
+      <strong>VILLA CITY ACADEMY</strong>
+      <small>Eldoret, Kenya</small>
+    </div>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#teams">Our Teams</a>
+    <a href="#fixtures">Fixtures</a>
+    <a href="#register">Register</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <h1>Building Talent. Shaping Futures.</h1>
+    <p>
+      Welcome to Villa City Academy, a community youth football
+      programme in Eldoret, Kenya. We help young players grow
+      through football, teamwork, discipline and mentorship.
+    </p>
+    <a class="btn btn-green" href="#register">Join Our Academy</a>
+    <a class="btn btn-white"
+       href="https://wa.me/254715121747?text=Hello%20Villa%20City%20Academy">
+       Contact Us on WhatsApp
+    </a>
+  </section>
+
+  <section id="about">
+    <div class="section-title"><h2>About Our Academy</h2></div>
+    <div class="intro">
+      <p>
+        Villa City Academy provides a community environment where
+        young people can develop their football ability, confidence
+        and teamwork. We aim to nurture talent while encouraging
+        discipline, respect, education and personal development.
+      </p>
+      <p class="notice">
+        Our home is Eldoret, Uasin Gishu County, Kenya.
+        More information about our coaches, training schedule and
+        academy history will be added as it is confirmed.
+      </p>
+    </div>
+  </section>
+
+  <section class="soft" id="teams">
+    <div class="section-title">
+      <h2>Our Teams</h2>
+      <p>Developing players at different stages of their journey.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><div class="number">⚽</div>
+        <h3>Under-10</h3><p>Early football development and fun.</p></article>
+      <article class="card"><div class="number">⚽</div>
+        <h3>Under-12</h3><p>Building skills and teamwork.</p></article>
+      <article class="card"><div class="number">⚽</div>
+        <h3>Under-14</h3><p>Improving technique and game awareness.</p></article>
+      <article class="card"><div class="number">⚽</div>
+        <h3>Under-17</h3><p>Developing competitive ability and discipline.</p></article>
+      <article class="card"><div class="number">⚽</div>
+        <h3>Under-18+</h3><p>Supporting continued football development.</p></article>
+    </div>
+  </section>
+
+  <section id="fixtures">
+    <div class="section-title">
+      <h2>Fixtures & Results</h2>
+      <p>Follow our matches and academy progress.</p>
+    </div>
+    <div class="intro card">
+      <h3>Match updates coming soon</h3>
+      <p>Upcoming fixtures and confirmed results will be published here.</p>
+      <p class="muted">Contact the academy for the latest match information.</p>
+      <a class="btn btn-green"
+         href="https://wa.me/254715121747?text=Hello%2C%20please%20share%20the%20latest%20fixtures">
+         Ask for Fixtures
+      </a>
+    </div>
+  </section>
+
+  <section class="soft" id="register">
+    <div class="section-title">
+      <h2>Register Your Interest</h2>
+      <p>Parents or guardians can contact us about joining the academy.</p>
+    </div>
+    <form id="registrationForm">
+      <label for="player">Player's name</label>
+      <input id="player" required maxlength="80"
+             placeholder="Enter player's name">
+
+      <label for="agegroup">Age group</label>
+      <select id="agegroup" required>
+        <option value="">Choose an age group</option>
+        <option>Under-10</option>
+        <option>Under-12</option>
+        <option>Under-14</option>
+        <option>Under-17</option>
+        <option>Under-18+</option>
+      </select>
+
+      <label for="guardian">Parent/guardian name</label>
+      <input id="guardian" required maxlength="80"
+             placeholder="Parent or guardian's name">
+
+      <label for="phone">Parent/guardian phone number</label>
+      <input id="phone" type="tel" required maxlength="25"
+             placeholder="Phone number">
+
+      <label for="message">Additional information (optional)</label>
+      <textarea id="message" rows="3" maxlength="500"
+                placeholder="Any questions for the academy?"></textarea>
+
+      <button class="btn btn-green" type="submit">
+        Send Registration via WhatsApp
+      </button>
+      <p class="muted">
+        This form opens WhatsApp with your details for you to send.
+        It does not automatically save an application. A parent or
+        guardian should submit details for a child.
+      </p>
+      <p id="formStatus" role="status"></p>
+    </form>
+  </section>
+
+  <section id="contact">
+    <div class="section-title"><h2>Contact Villa City Academy</h2></div>
+    <div class="intro">
+      <p><strong>Location:</strong> Eldoret, Uasin Gishu County, Kenya</p>
+      <p><strong>WhatsApp:</strong> 0715 121 747</p>
+      <a class="btn btn-green"
+         href="https://wa.me/254715121747?text=Hello%20Villa%20City%20Academy">
+         Chat with Us
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <strong>Villa City Academy</strong>
+  <p>Eldoret, Kenya | Building Talent. Shaping Futures.</p>
+  <p>&copy; <span id="year"></span> Villa City Academy</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("registrationForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const player = document.getElementById("player").value.trim();
+  const age = document.getElementById("agegroup").value;
+  const guardian = document.getElementById("guardian").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  const text = [
+    "Villa City Academy - Registration Enquiry",
+    "Player: " + player,
+    "Age group: " + age,
+    "Parent/guardian: " + guardian,
+    "Contact number: " + phone,
+    "Additional information: " + (message || "None")
+  ].join("\n");
+
+  document.getElementById("formStatus").textContent =
+    "WhatsApp will open. Review the details and press Send to submit.";
+
+  window.open(
+    "https://wa.me/254715121747?text=" + encodeURIComponent(text),
+    "_blank",
+    "noopener,noreferrer"
+  );
+});
+</script>
+</body>
+</html>
